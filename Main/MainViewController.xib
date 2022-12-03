@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="oshmarkazi_1_12" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S8G-jz-0CF" userLabel="topView">
+                    <rect key="frame" x="10" y="98" width="394" height="150"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="palov" translatesAutoresizingMaskIntoConstraints="NO" id="LOF-uv-BFH">
+                            <rect key="frame" x="20" y="20" width="110" height="110"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="ZYz-nk-hcg"/>
+                                <constraint firstAttribute="width" constant="110" id="gpP-dC-4ft"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-S5-uWJ">
+                            <rect key="frame" x="150" y="10" width="209" height="120"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toshkent to'y oshi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a01-d5-aFh">
+                                    <rect key="frame" x="0.0" y="0.0" width="209" height="32.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDO-f1-nlE">
+                                    <rect key="frame" x="0.0" y="43.5" width="166.5" height="34.5"/>
+                                    <color key="tintColor" systemColor="labelColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="person.2.fill" catalog="system" title="10 kishi uchun"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeG-xs-gx2">
+                                    <rect key="frame" x="0.0" y="89" width="133.5" height="31"/>
+                                    <color key="tintColor" systemColor="labelColor"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="timer" catalog="system" title="120 daqiqa"/>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hDn-S5-uWJ" secondAttribute="bottom" constant="20" id="4rG-es-Gs0"/>
+                        <constraint firstItem="hDn-S5-uWJ" firstAttribute="top" secondItem="S8G-jz-0CF" secondAttribute="top" constant="10" id="6Wd-Nz-0Jz"/>
+                        <constraint firstItem="LOF-uv-BFH" firstAttribute="leading" secondItem="S8G-jz-0CF" secondAttribute="leading" constant="20" id="IpR-wB-zsY"/>
+                        <constraint firstItem="hDn-S5-uWJ" firstAttribute="leading" secondItem="LOF-uv-BFH" secondAttribute="trailing" constant="20" id="iR3-Ru-ajJ"/>
+                        <constraint firstItem="LOF-uv-BFH" firstAttribute="top" secondItem="S8G-jz-0CF" secondAttribute="top" constant="20" id="p0b-ac-0pd"/>
+                        <constraint firstAttribute="bottom" secondItem="LOF-uv-BFH" secondAttribute="bottom" constant="20" id="qK8-1n-BBk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtR-89-crW" userLabel="bottomView">
+                    <rect key="frame" x="20" y="434" width="374" height="378"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AqR-Is-nXx">
+                            <rect key="frame" x="10" y="10" width="354" height="358"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mahsulotlar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QE-Me-T2C">
+                                    <rect key="frame" x="0.0" y="0.0" width="151.5" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Guruch - 1kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7S-yB-hS4">
+                                    <rect key="frame" x="0.0" y="46" width="143.5" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Mol go'shti - 1kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lri-mc-1iA">
+                                    <rect key="frame" x="0.0" y="92" width="181.5" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Sariq sabzi - 1,2 kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGi-Cv-H7v">
+                                    <rect key="frame" x="0.0" y="138" width="203.5" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Piyoz - 0,2 kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhb-hL-RmD">
+                                    <rect key="frame" x="0.0" y="184" width="150" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Osh magiz - 100 gr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeX-43-9Sz">
+                                    <rect key="frame" x="0.0" y="230" width="208.5" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Tuz - 1 osh qoshiq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdj-Og-spp">
+                                    <rect key="frame" x="0.0" y="276" width="197" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=". Suv - 1,2 ml" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KTI-fg-83P">
+                                    <rect key="frame" x="0.0" y="322" width="130.5" height="36"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AqR-Is-nXx" secondAttribute="bottom" constant="10" id="8nY-cQ-yXV"/>
+                        <constraint firstItem="AqR-Is-nXx" firstAttribute="top" secondItem="gtR-89-crW" secondAttribute="top" constant="10" id="Cco-Of-REh"/>
+                        <constraint firstItem="AqR-Is-nXx" firstAttribute="leading" secondItem="gtR-89-crW" secondAttribute="leading" constant="10" id="Gu3-Pr-M3F"/>
+                        <constraint firstAttribute="trailing" secondItem="AqR-Is-nXx" secondAttribute="trailing" constant="10" id="yYg-UA-Ytd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gtR-89-crW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5sm-Af-oZw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gtR-89-crW" secondAttribute="trailing" constant="20" id="65I-JZ-1LK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gtR-89-crW" secondAttribute="bottom" constant="50" id="C80-Bh-oUa"/>
+                <constraint firstItem="S8G-jz-0CF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="EFS-2j-xp6"/>
+                <constraint firstItem="S8G-jz-0CF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Hr0-BB-zd2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S8G-jz-0CF" secondAttribute="trailing" constant="10" id="Yei-F0-EYp"/>
+            </constraints>
+            <point key="canvasLocation" x="146.37681159420291" y="-154.01785714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="palov" width="500" height="500"/>
+        <image name="person.2.fill" catalog="system" width="128" height="81"/>
+        <image name="timer" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
